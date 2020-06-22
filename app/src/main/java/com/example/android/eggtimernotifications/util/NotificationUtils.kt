@@ -21,6 +21,7 @@ import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import androidx.core.app.NotificationCompat
+import androidx.core.content.ContextCompat
 import com.example.android.eggtimernotifications.MainActivity
 import com.example.android.eggtimernotifications.R
 
@@ -76,4 +77,14 @@ fun NotificationManager.sendNotification(messageBody: String, applicationContext
 
 }
 
-// TODO: Step 1.14 Cancel all notifications
+fun NotificationManager.cancelNotifications() {
+    cancelAll()
+}
+
+fun getNotificationManager(context: Context) : NotificationManager {
+    return ContextCompat.getSystemService(
+        context,
+        NotificationManager::class.java
+
+    ) as NotificationManager
+}
