@@ -49,7 +49,8 @@ class SnoozeReceiver: BroadcastReceiver() {
         )
 
         // Cancel notifications on new alarm
-        getNotificationManager(context).cancelNotifications()
+        val notificationManager = getNotificationManager(context)
+        notificationManager.cancelAll()
     }
 
 }

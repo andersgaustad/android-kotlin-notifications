@@ -89,7 +89,7 @@ fun NotificationManager.sendNotification(messageBody: String, applicationContext
 
         // Add snooze action
         .addAction(
-            R.drawable.common_google_signin_btn_icon_dark,
+            R.drawable.egg_icon,
             applicationContext.getString(R.string.snooze),
             snoozePendingIntent
         )
