@@ -1,5 +1,6 @@
 .gradle
 .idea
+local.properties
 start/.gradle/5.1.1/gc.properties
 start/.gradle/5.1.1/executionHistory/executionHistory.bin
 start/.gradle/5.1.1/executionHistory/executionHistory.lock
